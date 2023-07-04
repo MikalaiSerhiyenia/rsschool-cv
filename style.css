@@ -1,7 +1,122 @@
-head {
-  
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(175, 175, 175);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.photo {
+  width: 400px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-title {
+  padding: 5px 5px 5px 5px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: #829985;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #5d7260;
+}
+
+.section-title {
+  background-color: rgb(175, 175, 175);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.section-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.section-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #829985;
+  border-radius: 50%;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  background-color: rgb(175, 175, 175);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.git-hub-logo {
+  height: 30px;
+}
+
+.rs-school-logo {
+  height: 30px;
 }

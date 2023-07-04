@@ -1,10 +1,200 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">About myself</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code examples</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#language" class="nav-link">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main-container">
+        <section class="section" id="profile">
+          <h1 class="section-title">Mikalai Serhiyenia</h1>
+          <img src="assets/img/photo.jpeg" alt="my photo" class="photo" />
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul>
+            <li><b>E-mail:</b> mikalai.serhiyenia@gmail.com</li>
+            <li><b>Discord:</b> mikalaiserhiyenia</li>
+            <li><b>Telegram:</b> @mikalaiserhiyenia</li>
+            <li><b>Tel 🇵🇱:</b> +48572119619</li>
+            <li><b>Tel 🇧🇾:</b> +375295662268</li>
+          </ul>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">About myself</h2>
+          <p>
+            I graduated from the Philology Department of Belarusian State
+            University with a specialization in "Philologist. Teacher of Russian
+            Language and Literature". I worked as a proofreader and editor at
+            the children's literature publishing house "Azbookvarik" for one
+            year. Then, for a year, I worked as a freelance copywriter. For the
+            past 10 years, I have been working as a content manager at
+            "HOLODILNIK.RU". My responsibilities included content management,
+            copywriting, proofreading and editing, formatting, and publishing
+            texts on the website, writing advertising texts, creating
+            infographics, and preparing presentations.<br /><br />During my
+            work, I acquired basic skills in HTML/CSS and became passionate
+            about web development. In 2019, I graduated from the "Web
+            Application Development with JavaScript" program at the High-Tech
+            Park Educational Center (IT-Academy), where I gained fundamental
+            knowledge of programming in JS.<br /><br />Due to my relocation to a
+            new country, I would like to dive deeper into studying JavaScript
+            and utilize RS School to enhance my job search opportunities.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript Basics</li>
+            <li>Git, GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code examples</h2>
+          <code>
+            <h4>Count characters in your string</h4>
+            <pre>
+function count(string) {
+  let charCount = {};
+  for (let char of string) {
+    charCount[char] ? charCount[char]++ : charCount[char]=1
+  }
+  return charCount;
+}
+            </pre>
+            <h4>Human Readable Time</h4>
+            <pre>
+function humanReadable (seconds) {
+  function addZero(num) {
+    return (num < 10) ? `0${num}` : num;
+  }
+  let hh = Math.floor(seconds / 3600);
+  let mm = Math.floor((seconds % 3600) / 60);
+  let ss = Math.floor((seconds % 3600) % 60);
+  return `${addZero(hh)}:${addZero(mm)}:${addZero(ss)}`;
+}
+            </pre>
+            <h4>Find the unique number</h4>
+            <pre>
+function findUniq(arr) {
+  arr.sort((a,b)=>a-b);
+  return arr[0]==arr[1]?arr.pop():arr[0];
+}
+            </pre>
+          </code>
+        </section>
+        <section class="section" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <ul>
+            <li>
+              <b>Azbookvarik</b> <i>(2011-2012)</i> &mdash; proofreader, editor
+            </li>
+            <li>
+              <b>HOLODILNIK.RU</b> <i>(2013-2023)</i> &mdash; content manager,
+              copywriter, editor, proofreader
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul>
+            <li>
+              <b>Belarusian State University</b><br />
+              Russian Language and Literature<br />
+              <i>Sep 2006 &mdash; Jun 2011</i>
+            </li>
+            <li>
+              <b>High-Tech Park Educational Center (IT-Academy)</b><br />
+              Web Application Development with JavaScript<br />
+              <i>Nov 2018 &mdash; May 2019</i>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="language">
+          <h2 class="section-title">Language</h2>
+          <ul>
+            <li><b>English</b> &mdash; Intermediate/Upper-intermediate</li>
+            <li><b>Russian</b> &mdash; Native</li>
+            <li><b>Belarusian</b> &mdash; Advanced</li>
+            <li><b>Polish</b> &mdash; Beginner, Elementary</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-element">
+            <a href="https://github.com/MikalaiSerhiyenia">
+              <img
+                src="assets/img/git-hub-logo.png"
+                alt="GitHub Logo"
+                class="git-hub-logo"
+              />
+            </a>
+          </li>
+          <li class="footer-element">
+            <p>© 2023</p>
+          </li>
+          <li class="footer-element">
+            <a href="https://rs.school">
+              <img
+                src="assets/img/rs-school-logo.png"
+                alt="RS School Logo"
+                class="rs-school-logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
