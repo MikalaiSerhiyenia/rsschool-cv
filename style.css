@@ -36,6 +36,10 @@ body {
   border-radius: 5px 5px 5px 5px;
 }
 
+.contacts-list {
+  list-style: none;
+}
+
 .nav-link {
   text-decoration: none;
   padding: 0 20px;
