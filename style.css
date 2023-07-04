@@ -32,7 +32,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  background-color: rgb(175, 175, 175);
+  background-color: rgb(115, 115, 115);
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -47,7 +47,7 @@ body {
   transition: 0.3s;
   font-size: 16px;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 
 .photo {
@@ -73,7 +73,6 @@ body {
   padding: 5px 5px 5px 5px;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 3px;
   color: white;
 }
 
@@ -88,7 +87,7 @@ body {
 }
 
 .section-title {
-  background-color: rgb(175, 175, 175);
+  background-color: rgb(115, 115, 115);
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -125,4 +124,9 @@ body {
 
 .rs-school-logo {
   height: 30px;
+}
+
+.code-example {
+  background-color: black;
+  color: white;
 }

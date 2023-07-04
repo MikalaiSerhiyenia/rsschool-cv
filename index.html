@@ -26,13 +26,13 @@
               <a href="#contacts" class="nav-link">Contacts</a>
             </li>
             <li class="nav-item">
-              <a href="#summary" class="nav-link">About myself</a>
+              <a href="#summary" class="nav-link">Summary</a>
             </li>
             <li class="nav-item">
               <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#code" class="nav-link">Code examples</a>
+              <a href="#code" class="nav-link">Code</a>
             </li>
             <li class="nav-item">
               <a href="#experience" class="nav-link">Experience</a>
@@ -84,7 +84,7 @@
           </ul>
         </section>
         <section class="section" id="summary">
-          <h2 class="section-title">About myself</h2>
+          <h2 class="section-title">Summary</h2>
           <p>
             I graduated from the Philology Department of Belarusian State
             University with a specialization in "Philologist. Teacher of Russian
@@ -116,38 +116,65 @@
           </ul>
         </section>
         <section class="section" id="code">
-          <h2 class="section-title">Code examples</h2>
-          <code>
-            <h4>Count characters in your string</h4>
-            <pre>
-function count(string) {
-  let charCount = {};
-  for (let char of string) {
-    charCount[char] ? charCount[char]++ : charCount[char]=1
-  }
-  return charCount;
-}
-            </pre>
-            <h4>Human Readable Time</h4>
-            <pre>
-function humanReadable (seconds) {
-  function addZero(num) {
-    return (num < 10) ? `0${num}` : num;
-  }
-  let hh = Math.floor(seconds / 3600);
-  let mm = Math.floor((seconds % 3600) / 60);
-  let ss = Math.floor((seconds % 3600) % 60);
-  return `${addZero(hh)}:${addZero(mm)}:${addZero(ss)}`;
-}
-            </pre>
-            <h4>Find the unique number</h4>
-            <pre>
-function findUniq(arr) {
-  arr.sort((a,b)=>a-b);
-  return arr[0]==arr[1]?arr.pop():arr[0];
-}
-            </pre>
-          </code>
+          <h2 class="section-title">Code</h2>
+          <details>
+            <summary>Duplicate Encoder</summary>
+            <p>
+              <i
+                >The goal of this exercise is to convert a string to a new
+                string where each character in the new string is "(" if that
+                character appears only once in the original string, or ")" if
+                that character appears more than once in the original string.
+                Ignore capitalization when determining if a character is a
+                duplicate.</i
+              >
+            </p>
+            <pre class="code-example">
+    function duplicateEncode(word){
+        return word.toLowerCase().split('').map((char, index, array) => {
+            const count = array.filter((c) => c === char).length;
+            return count === 1 ? "(" : ")";
+        }).join('');
+    }</pre
+            >
+          </details>
+          <details>
+            <summary>Count characters in your string</summary>
+            <p>
+              <i
+                >The main idea is to count all the occurring characters in a
+                string. If you have a string like aba, then the result should be
+                {'a': 2, 'b': 1}. What if the string is empty? Then the result
+                should be empty object literal, {}.</i
+              >
+            </p>
+            <pre class="code-example">
+    function count(string) {
+        let charCount = {};
+        for (let char of string) {
+        charCount[char] ? charCount[char]++ : charCount[char]=1
+        }
+        return charCount;
+    }</pre
+            >
+          </details>
+          <details>
+            <summary>
+              Delete occurrences of an element if it occurs more than n times
+            </summary>
+            <p>
+              <i
+                >Given a list and a number, create a new list that contains each
+                number of list at most N times, without reordering.</i
+              >
+            </p>
+            <pre class="code-example">
+    function deleteNth(arr, x) {
+        let totals = {};
+        return arr.filter(i => (totals[i] = ++totals[i] || 0) < x);
+    }</pre
+            >
+          </details>
         </section>
         <section class="section" id="experience">
           <h2 class="section-title">Experience</h2>
