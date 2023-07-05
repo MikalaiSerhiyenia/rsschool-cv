@@ -26,9 +26,6 @@
               <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#code" class="nav-link">Code</a>
-            </li>
-            <li class="nav-item">
               <a href="#experience" class="nav-link">Experience</a>
             </li>
             <li class="nav-item">
@@ -36,6 +33,9 @@
             </li>
             <li class="nav-item">
               <a href="#language" class="nav-link">Language</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code</a>
             </li>
             <li class="nav-item">
               <a href="#contacts" class="nav-link">Contacts</a>
@@ -79,74 +79,6 @@
             <li>VS Code</li>
           </ul>
         </section>
-        <section class="section" id="code">
-          <h2 class="section-title">Code</h2>
-          <details>
-            <summary>Duplicate Encoder</summary>
-            <p>
-              <i
-                >The goal of this exercise is to convert a string to a new
-                string where each character in the new string is "(" if that
-                character appears only once in the original string, or ")" if
-                that character appears more than once in the original string.
-                Ignore capitalization when determining if a character is a
-                duplicate.</i
-              >
-            </p>
-            <pre class="code-example">
-    function duplicateEncode(word){
-        return word.toLowerCase().split('').map((char, index, array) => {
-            const count = array.filter((c) => c === char).length;
-            return count === 1 ? "(" : ")";
-        }).join('');
-    }</pre
-            >
-          </details>
-          <details>
-            <summary>Count characters in your string</summary>
-            <p>
-              <i
-                >The main idea is to count all the occurring characters in a
-                string. If you have a string like aba, then the result should be
-                {'a': 2, 'b': 1}. What if the string is empty? Then the result
-                should be empty object literal, {}.</i
-              >
-            </p>
-            <pre class="code-example">
-    function count(string) {
-        let charCount = {};
-        for (let char of string) {
-        charCount[char] ? charCount[char]++ : charCount[char]=1
-        }
-        return charCount;
-    }</pre
-            >
-          </details>
-          <details>
-            <summary>Transportation on vacation</summary>
-            <p>
-              <i
-                >Every day you rent the car costs $40. If you rent the car for 7
-                or more days, you get $50 off your total. Alternatively, if you
-                rent the car for 3 or more days, you get $20 off your total.
-                Write a code that gives out the total amount for different
-                days(d).</i
-              >
-            </p>
-            <pre class="code-example">
-    function rentalCarCost(d) {
-      switch(true) {
-          case (d<=2):
-          return 40*d;
-          case (d>=7):
-          return 40*d - 50;
-          default:
-          return 40*d - 20;
-      }
-    }</pre
-            >
-          </details>
-        </section>
         <section class="section" id="experience">
           <h2 class="section-title">Experience</h2>
           <ul>
@@ -182,6 +114,83 @@
             <li><b>Belarusian</b> &mdash; Advanced</li>
             <li><b>Polish</b> &mdash; Beginner, Elementary</li>
           </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code examples</h2>
+          <div class="codewars-block">
+            <div class="codewars-logo">
+              <img
+                src="assets/img/codewars-logo.gif"
+                alt="Codewars Logo"
+                width="20px"
+              />
+            </div>
+            <div class="codewars-item">
+              <a
+                href="https://www.codewars.com/users/MikalaiSerhiyenia"
+                class="link"
+                target="_blank"
+                >My Codewars Page</a
+              >
+            </div>
+          </div>
+          <details>
+            <summary class="code-link">Duplicate Encoder</summary>
+            <p>
+              The goal of this exercise is to convert a string to a new string
+              where each character in the new string is "(" if that character
+              appears only once in the original string, or ")" if that character
+              appears more than once in the original string. Ignore
+              capitalization when determining if a character is a duplicate.
+            </p>
+            <pre class="code-example">
+    function duplicateEncode(word){
+        return word.toLowerCase().split('').map((char, index, array) => {
+            const count = array.filter((c) => c === char).length;
+            return count === 1 ? "(" : ")";
+        }).join('');
+    }</pre
+            >
+          </details>
+          <details>
+            <summary class="code-link">Count characters in your string</summary>
+            <p>
+              The main idea is to count all the occurring characters in a
+              string. If you have a string like aba, then the result should be
+              {'a': 2, 'b': 1}. What if the string is empty? Then the result
+              should be empty object literal, {}.
+            </p>
+            <pre class="code-example">
+    function count(string) {
+        let charCount = {};
+        for (let char of string) {
+        charCount[char] ? charCount[char]++ : charCount[char]=1
+        }
+        return charCount;
+    }</pre
+            >
+          </details>
+          <details>
+            <summary class="code-link">Transportation on vacation</summary>
+            <p>
+              Every day you rent the car costs $40. If you rent the car for 7 or
+              more days, you get $50 off your total. Alternatively, if you rent
+              the car for 3 or more days, you get $20 off your total. Write a
+              code that gives out the total amount for different days(d).
+            </p>
+            <pre class="code-example">
+    function rentalCarCost(d) {
+      switch(true) {
+          case (d<=2):
+          return 40*d;
+          case (d>=7):
+          return 40*d - 50;
+          default:
+          return 40*d - 20;
+      }
+    }</pre
+            >
+          </details>
         </section>
         <section class="section" id="contacts">
           <h2 class="section-title">Contacts</h2>
@@ -225,7 +234,13 @@
                   width="16px"
                 />
               </div>
-              <div class="contact-item">mikalaiserhiyenia</div>
+              <div class="contact-item">
+                <a
+                  href="https://discordapp.com/users/mikalaiserhiyenia/"
+                  class="link"
+                  >mikalaiserhiyenia</a
+                >
+              </div>
             </li>
             <li class="contact-block">
               <div class="contact-img">

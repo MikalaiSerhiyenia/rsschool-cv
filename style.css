@@ -56,6 +56,7 @@ body {
 .photo {
   width: 250px;
   border: 3px solid #829985;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .main-container {
@@ -82,6 +83,7 @@ body {
 }
 
 .section-subtitle {
+  padding: 0 5px 5px 5px;
   font-size: 1rem;
   font-weight: normal;
   letter-spacing: 3px;
@@ -94,8 +96,19 @@ body {
   transition: color 0.5s;
 }
 
+.code-link {
+  text-decoration: none;
+  color: #black;
+}
+
 .link:hover {
   color: #5d7260;
+  cursor: pointer;
+}
+
+.code-link:hover {
+  color: #5d7260;
+  cursor: pointer;
 }
 
 .section-item {
@@ -152,6 +165,12 @@ body {
   margin-right: 10px;
 }
 
-.contact-item {
-  text-align: left;
+.codewars-block {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.codewars-logo {
+  margin-right: 10px;
 }
