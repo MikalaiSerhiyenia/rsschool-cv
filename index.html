@@ -20,9 +20,6 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#contacts" class="nav-link">Contacts</a>
-            </li>
-            <li class="nav-item">
               <a href="#summary" class="nav-link">Summary</a>
             </li>
             <li class="nav-item">
@@ -40,6 +37,9 @@
             <li class="nav-item">
               <a href="#language" class="nav-link">Language</a>
             </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -49,63 +49,24 @@
       <div class="container main-container">
         <section class="section" id="profile">
           <h1 class="section-title">MIKALAI SERHIYENIA</h1>
-          <p class="section-subtitle">junior front-end developer (beginner)</p>
-          <img src="assets/img/photo.jpeg" alt="my photo" class="photo" />
-        </section>
-        <section class="section" id="contacts">
-          <h2 class="section-title">Contacts</h2>
-          <ul class="contacts-list">
-            <li>
-              <div class="contact-img">📍</div>
-              <div class="contact-item">Warsaw, Poland</div>
-            </li>
-            <li>
-              <div class="contact-img">
-                <img
-                  src="assets/img/Gmail_Logo_512px.png"
-                  alt="gmail-logo"
-                  width="16px"
-                />
-              </div>
-              <div class="contact-item">mikalai.serhiyenia@gmail.com</div>
-            </li>
-            <li>
-              <div class="contact-img">
-                <img
-                  src="assets/img/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
-                  alt="discord-logo"
-                  width="16px"
-                />
-              </div>
-              <div class="contact-item">mikalaiserhiyenia</div>
-            </li>
-            <li>
-              <div class="contact-img">
-                <img
-                  src="assets/img/Telegram_logo.svg.png"
-                  alt="telegram-logo"
-                  width="16px"
-                />
-              </div>
-              <div class="contact-item">@mikalaiserhiyenia</div>
-            </li>
-            <li>
-              <div class="contact-img">📱</div>
-              <div class="contact-item">+48572119619</div>
-            </li>
-          </ul>
+          <div class="section-subtitle">
+            junior front-end developer (beginner)
+          </div>
+          <div class="wrap-photo">
+            <img src="assets/img/photo.jpeg" alt="my photo" class="photo" />
+          </div>
         </section>
         <section class="section" id="summary">
           <h2 class="section-title">Summary</h2>
           <p>
-            By education, I am a philologist and a teacher of the Russian
-            language and literature. For over 10 years, I have worked as an
-            editor, proofreader, and content manager. I have always been
-            interested in programming. In 2019, I completed introductory courses
-            on HTML, CSS, and JS. After moving from Belarus to Poland, I
-            returned to studying to become a junior front-end developer. I hope
-            that RS School will help me gain new knowledge and assist me in
-            finding an exciting new job.
+            I am a philologist and a teacher of the Russian language and
+            literature. For over 10 years, I have worked as an editor,
+            proofreader, and content manager. I have always been interested in
+            programming. A few years ago I completed introductory courses on
+            HTML, CSS, and JS. After moving from Belarus to Poland, I returned
+            to studying to become a junior front-end developer. I hope that RS
+            School will help me gain new knowledge and assist me in finding an
+            exciting new job.
           </p>
         </section>
         <section class="section" id="skills">
@@ -162,19 +123,26 @@
             >
           </details>
           <details>
-            <summary>
-              Delete occurrences of an element if it occurs more than n times
-            </summary>
+            <summary>Transportation on vacation</summary>
             <p>
               <i
-                >Given a list and a number, create a new list that contains each
-                number of list at most N times, without reordering.</i
+                >Every day you rent the car costs $40. If you rent the car for 7
+                or more days, you get $50 off your total. Alternatively, if you
+                rent the car for 3 or more days, you get $20 off your total.
+                Write a code that gives out the total amount for different
+                days(d).</i
               >
             </p>
             <pre class="code-example">
-    function deleteNth(arr, x) {
-        let totals = {};
-        return arr.filter(i => (totals[i] = ++totals[i] || 0) < x);
+    function rentalCarCost(d) {
+      switch(true) {
+          case (d<=2):
+          return 40*d;
+          case (d>=7):
+          return 40*d - 50;
+          default:
+          return 40*d - 20;
+      }
     }</pre
             >
           </details>
@@ -215,6 +183,78 @@
             <li><b>Polish</b> &mdash; Beginner, Elementary</li>
           </ul>
         </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="contacts-list">
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/place-logo.png"
+                  alt="place-logo"
+                  width="16px"
+                />
+              </div>
+              <div class="contact-item">
+                <a
+                  href="https://goo.gl/maps/WydqLjpew2TuhRp56"
+                  class="link"
+                  target="_blank"
+                  >Warsaw, Poland</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/Gmail_Logo_512px.png"
+                  alt="gmail-logo"
+                  width="16px"
+                />
+              </div>
+              <div class="contact-item">
+                <a href="mailto:mikalai.serhiyenia@gmail.com" class="link"
+                  >mikalai.serhiyenia@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+                  alt="discord-logo"
+                  width="16px"
+                />
+              </div>
+              <div class="contact-item">mikalaiserhiyenia</div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/Telegram_logo.svg.png"
+                  alt="telegram-logo"
+                  width="16px"
+                />
+              </div>
+              <div class="contact-item">
+                <a href="https://t.me/mikalaiserhiyenia" class="link"
+                  >@mikalaiserhiyenia</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/smartphone-logo.png"
+                  alt="phone-logo"
+                  width="16px"
+                />
+              </div>
+              <div class="contact-item">
+                <a href="tel:++48572119619" class="link">+48572119619</a>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
     </main>
 
@@ -222,7 +262,7 @@
       <div class="container">
         <ul class="footer-list">
           <li class="footer-element">
-            <a href="https://github.com/MikalaiSerhiyenia">
+            <a href="https://github.com/MikalaiSerhiyenia" target="_blank">
               <img
                 src="assets/img/git-hub-logo.png"
                 alt="GitHub Logo"
@@ -234,7 +274,7 @@
             <p>© 2023</p>
           </li>
           <li class="footer-element">
-            <a href="https://rs.school/js/">
+            <a href="https://rs.school/js/" target="_blank">
               <img
                 src="assets/img/rs-school-logo.png"
                 alt="RS School Logo"

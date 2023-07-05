@@ -11,7 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
@@ -23,7 +23,7 @@ body {
 
 .container {
   max-width: 1440px;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -48,11 +48,14 @@ body {
   color: white;
 }
 
+.wrap-photo {
+  text-align: left;
+  margin: 10px;
+}
+
 .photo {
-  width: 300px;
-  border: solid #829985;
-  border-radius: 5px 5px 5px 5px;
-  margin: auto;
+  width: 250px;
+  border: 3px solid #829985;
 }
 
 .main-container {
@@ -80,7 +83,6 @@ body {
 
 .section-subtitle {
   font-size: 1rem;
-  padding: 0 5px 5px 5px;
   font-weight: normal;
   letter-spacing: 3px;
   color: #829985;
@@ -118,7 +120,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
-  letter-spacing: 3px;
   list-style: none;
   background-color: #829985;
   border-radius: 5px 5px 5px 5px;
@@ -139,20 +140,18 @@ body {
 }
 
 .contacts-list {
-  display: flex;
-  flex-direction: column;
-  background-color: #829985;
   list-style: none;
 }
 
-.contact-img {
+.contact-block {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
+.contact-img {
+  margin-right: 10px;
+}
+
 .contact-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: left;
 }
