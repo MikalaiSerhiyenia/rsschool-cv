@@ -165,6 +165,10 @@ body {
   margin-right: 10px;
 }
 
+.contact-icon {
+  width: 16px;
+}
+
 .codewars-block {
   display: flex;
   align-items: center;
@@ -173,4 +177,45 @@ body {
 
 .codewars-logo {
   margin-right: 10px;
+}
+
+.codewars-icon {
+  width: 16px;
+}
+
+.study-place {
+  font-weight: normal;
+}
+
+.study-specialty {
+  font-weight: lighter;
+  line-height: 0.1em;
+}
+
+.study-period {
+  font-weight: lighter;
+  line-height: 0.1em;
+}
+
+.work-place {
+  font-weight: normal;
+}
+
+.work-specialty {
+  font-weight: lighter;
+  line-height: 0.1em;
+}
+
+.work-period {
+  font-weight: lighter;
+  line-height: 0.1em;
+}
+
+.language-name {
+  font-weight: normal;
+}
+
+.language-level {
+  font-weight: lighter;
+  line-height: 0.1em;
 }

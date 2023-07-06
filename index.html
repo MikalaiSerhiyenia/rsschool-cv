@@ -83,11 +83,16 @@
           <h2 class="section-title">Experience</h2>
           <ul>
             <li>
-              <b>Azbookvarik</b> <i>(2011-2012)</i> &mdash; proofreader, editor
+              <p class="work-place">Azbookvarik</p>
+              <p class="work-specialty">Proofreader, editor</p>
+              <p class="work-period">Jun 2011 &mdash; Sep 2012</p>
             </li>
             <li>
-              <b>HOLODILNIK.RU</b> <i>(2013-2023)</i> &mdash; content manager,
-              copywriter, editor, proofreader
+              <p class="work-place">HOLODILNIK.RU</p>
+              <p class="work-specialty">
+                Content manager, copywriter, editor, proofreader
+              </p>
+              <p class="work-period">May 2013 &mdash; Jun 2023</p>
             </li>
           </ul>
         </section>
@@ -95,24 +100,40 @@
           <h2 class="section-title">Education</h2>
           <ul>
             <li>
-              <b>Belarusian State University</b><br />
-              Russian Language and Literature<br />
-              <i>Sep 2006 &mdash; Jun 2011</i>
+              <p class="study-place">Belarusian State University</p>
+              <p class="study-specialty">Russian Language and Literature</p>
+              <p class="study-period">Sep 2006 &mdash; Jun 2011</p>
             </li>
             <li>
-              <b>High-Tech Park Educational Center (IT-Academy)</b><br />
-              Web Application Development with JavaScript<br />
-              <i>Nov 2018 &mdash; May 2019</i>
+              <p class="study-place">
+                High-Tech Park Educational Center (IT-Academy)
+              </p>
+              <p class="study-specialty">
+                Web Application Development with JavaScript
+              </p>
+              <p class="study-period">Nov 2018 &mdash; May 2019</p>
             </li>
           </ul>
         </section>
         <section class="section" id="language">
           <h2 class="section-title">Language</h2>
           <ul>
-            <li><b>English</b> &mdash; Intermediate/Upper-intermediate</li>
-            <li><b>Russian</b> &mdash; Native</li>
-            <li><b>Belarusian</b> &mdash; Advanced</li>
-            <li><b>Polish</b> &mdash; Beginner, Elementary</li>
+            <li>
+              <p class="language-name">English</p>
+              <p class="language-level">Intermediate/Upper-intermediate</p>
+            </li>
+            <li>
+              <p class="language-name">Russian</p>
+              <p class="language-level">Native</p>
+            </li>
+            <li>
+              <p class="language-name">Belarusian</p>
+              <p class="language-level">Advanced</p>
+            </li>
+            <li>
+              <p class="language-name">Polish</p>
+              <p class="language-level">Beginner, Elementary</p>
+            </li>
           </ul>
         </section>
         <section class="section" id="code">
@@ -122,7 +143,7 @@
               <img
                 src="assets/img/codewars-logo.gif"
                 alt="Codewars Logo"
-                width="20px"
+                class="codewars-icon"
               />
             </div>
             <div class="codewars-item">
@@ -171,23 +192,14 @@
             >
           </details>
           <details>
-            <summary class="code-link">Transportation on vacation</summary>
+            <summary class="code-link">The highest profit wins!</summary>
             <p>
-              Every day you rent the car costs $40. If you rent the car for 7 or
-              more days, you get $50 off your total. Alternatively, if you rent
-              the car for 3 or more days, you get $20 off your total. Write a
-              code that gives out the total amount for different days(d).
+              Write a function that returns both the minimum and maximum number
+              of the given list/array.
             </p>
             <pre class="code-example">
-    function rentalCarCost(d) {
-      switch(true) {
-          case (d<=2):
-          return 40*d;
-          case (d>=7):
-          return 40*d - 50;
-          default:
-          return 40*d - 20;
-      }
+    function minMax(arr){
+      return [Math.min(...arr), Math.max(...arr)];
     }</pre
             >
           </details>
@@ -200,7 +212,7 @@
                 <img
                   src="assets/img/place-logo.png"
                   alt="place-logo"
-                  width="16px"
+                  class="contact-icon"
                 />
               </div>
               <div class="contact-item">
@@ -217,7 +229,7 @@
                 <img
                   src="assets/img/Gmail_Logo_512px.png"
                   alt="gmail-logo"
-                  width="16px"
+                  class="contact-icon"
                 />
               </div>
               <div class="contact-item">
@@ -231,7 +243,7 @@
                 <img
                   src="assets/img/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
                   alt="discord-logo"
-                  width="16px"
+                  class="contact-icon"
                 />
               </div>
               <div class="contact-item">
@@ -247,7 +259,7 @@
                 <img
                   src="assets/img/Telegram_logo.svg.png"
                   alt="telegram-logo"
-                  width="16px"
+                  class="contact-icon"
                 />
               </div>
               <div class="contact-item">
@@ -261,7 +273,7 @@
                 <img
                   src="assets/img/smartphone-logo.png"
                   alt="phone-logo"
-                  width="16px"
+                  class="contact-icon"
                 />
               </div>
               <div class="contact-item">
