@@ -1,6 +1,6 @@
 # Mikalai Serhiyenia
 
-![photo](/photo.jpeg)
+![photo](/assets/img/photo.jpeg)
 
 ## Contacts
 
