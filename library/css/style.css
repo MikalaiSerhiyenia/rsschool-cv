@@ -1,5 +1,3 @@
-/* Library Project Styles */
-
    /* Reset and base styles  */
    * {
      padding: 0px;
@@ -350,7 +348,7 @@
      flex-direction: row;
      flex-wrap: nowrap;
      align-items: center;
-     justify-content: center;
+     justify-content: space-between;
      margin: 40px;
      width: 68px;
      height: 16px;
@@ -408,6 +406,10 @@
 
    .section__favorites-season-block:last-child {
      margin-right: 0;
+   }
+
+   .section__favorites-season__click-area {
+     padding: 10px 10px;
    }
 
    .section__favorites-season-input {
@@ -888,6 +890,11 @@
      margin-top: 20px;
    }
 
+   .social-media {
+     display: flex;
+     flex-direction: row;
+   }
+
    .social-media-link {
      margin-right: 15px;
    }
@@ -928,6 +935,16 @@
      font-weight: 400;
      line-height: 40px;
      letter-spacing: 2px;
+   }
+
+   .footer__link {
+     text-decoration: none;
+     color: inherit;
+     transition: .5s linear;
+   }
+
+   .footer__link:hover {
+     color: #BB945F;
    }
 
    /* Footer Styles End */
