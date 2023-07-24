@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/img/favicon_io/favicon-32x32.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brooklyn Public Library</title>
@@ -101,7 +102,7 @@
         <p class="section__favorites-text">Pick favorites of season:</p>
         <div class="section__favorites-seasons">
           <div class="section__favorites-season-block">
-            <label>
+            <label class="section__favorites-season__click-area">
               <input
                 type="radio"
                 class="section__favorites-season-input"
@@ -112,7 +113,7 @@
             </label>
           </div>
           <div class="section__favorites-season-block">
-            <label>
+            <label class="section__favorites-season__click-area">
               <input
                 type="radio"
                 class="section__favorites-season-input"
@@ -121,7 +122,7 @@
             </label>
           </div>
           <div class="section__favorites-season-block">
-            <label>
+            <label class="section__favorites-season__click-area">
               <input
                 type="radio"
                 class="section__favorites-season-input"
@@ -130,7 +131,7 @@
             </label>
           </div>
           <div class="section__favorites-season-block">
-            <label>
+            <label class="section__favorites-season__click-area">
               <input
                 type="radio"
                 class="section__favorites-season-input"
@@ -533,27 +534,33 @@
         <span class="weekdays"> Mon - Fri<br />08:00 am - 07:00 pm </span>
       </div>
       <div class="footer__social-media-weekend">
-        <div class="social-media">
-          <a href="https://twitter.com/" class="social-media-link">
-            <img
-              class="social-media-icon"
-              src="/img/twitter-icon.png"
-              alt="Twitter Icon"
-            />
-          </a>
-          <a href="https://www.instagram.com/" class="social-media-link">
-            <img
-              class="social-media-icon"
-              src="/img/instagram-icon.png"
-              alt="Instagram Icon"
-          /></a>
-          <a href="https://www.facebook.com/" class="social-media-link">
-            <img
-              class="social-media-icon"
-              src="/img/facebook-icon.png"
-              alt="Facebook Icon"
-          /></a>
-        </div>
+        <ul class="social-media">
+          <li class="social-media-link">
+            <a href="https://twitter.com/">
+              <img
+                class="social-media-icon"
+                src="/img/u_twitter-alt.svg"
+                alt="Twitter Icon"
+              />
+            </a>
+          </li>
+          <li class="social-media-link">
+            <a href="https://www.instagram.com/">
+              <img
+                class="social-media-icon"
+                src="/img/u_instagram.svg"
+                alt="Instagram Icon"
+            /></a>
+          </li>
+          <li class="social-media-link">
+            <a href="https://www.facebook.com/">
+              <img
+                class="social-media-icon"
+                src="/img/u_facebook-f.svg"
+                alt="Facebook Icon"
+            /></a>
+          </li>
+        </ul>
         <span class="weekend"> Sat - Sun<br />10:00 am - 06:00 pm </span>
       </div>
       <div class="footer__footer-line">
@@ -561,8 +568,16 @@
       </div>
       <div class="footer__rss">
         <p class="rss-item">2023</p>
-        <p class="rss-item rss-item-school">The Rolling Scopes School</p>
-        <p class="rss-item">Mikalai Serhiyenia</p>
+        <p class="rss-item">
+          <a href="https://rs.school/js-stage0/" class="footer__link"
+            >The Rolling Scopes School</a
+          >
+        </p>
+        <p class="rss-item">
+          <a href="https://github.com/MikalaiSerhiyenia" class="footer__link"
+            >Mikalai Serhiyenia</a
+          >
+        </p>
       </div>
     </footer>
   </body>
