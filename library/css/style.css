@@ -380,8 +380,14 @@
 
    .section__favorites-seasons {
      align-self: flex-start;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
      margin-top: 40px;
      margin-left: 20px;
+     width: 700px;
+     height: 24px;
    }
 
    .section__favorites-seasons label {
@@ -396,12 +402,8 @@
    .section__favorites-seasons {
      display: flex;
      flex-direction: row;
-     align-content: flex-start;
-     justify-content: flex-start;
-   }
-
-   .section__favorites-season-block {
-     margin-right: 90px;
+     align-content: center;
+     justify-content: space-between;
    }
 
    .section__favorites-season-block:last-child {
@@ -409,11 +411,29 @@
    }
 
    .section__favorites-season__click-area {
-     padding: 10px 10px;
+     padding: 20px 20px;
+     position: relative;
    }
 
-   .section__favorites-season-input {
-     margin-right: 20px;
+   .favorites-season-input {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     clip: rect(0 0 0 0);
+   }
+
+   .radio-style {
+     position: absolute;
+     left: 0;
+     width: 17px;
+     height: 17px;
+     background-image: url(/img/svg/radio-off.svg);
+   }
+
+   .favorites-season-input:checked+.radio-style {
+     background-image: url(/img/svg/radio-on.svg);
+
    }
 
    .section__favorites-items {
@@ -941,6 +961,7 @@
      text-decoration: none;
      color: inherit;
      transition: .5s linear;
+     flex-grow: 1;
    }
 
    .footer__link:hover {
