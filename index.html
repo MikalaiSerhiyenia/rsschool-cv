@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mikalai Serhiyenia CV</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#language" class="nav-link">Language</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main-container">
+        <section class="section" id="profile">
+          <h1 class="section-title">MIKALAI SERHIYENIA</h1>
+          <div class="section-subtitle">
+            junior front-end developer (beginner)
+          </div>
+          <div class="wrap-photo">
+            <img src="assets/img/photo.jpeg" alt="my photo" class="photo" />
+          </div>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            I am a philologist and a teacher of the Russian language and
+            literature. For over 10 years, I have worked as an editor,
+            proofreader, and content manager. I have always been interested in
+            programming. A few years ago I completed introductory courses on
+            HTML, CSS, and JS. After moving from Belarus to Poland, I returned
+            to studying to become a junior front-end developer. I hope that RS
+            School will help me gain new knowledge and assist me in finding an
+            exciting new job.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript Basics</li>
+            <li>Git, GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </section>
+        <section class="section" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <ul>
+            <li>
+              <p class="work-place">Azbookvarik</p>
+              <p class="work-specialty">Proofreader, editor</p>
+              <p class="work-period">Jun 2011 &mdash; Sep 2012</p>
+            </li>
+            <li>
+              <p class="work-place">HOLODILNIK.RU</p>
+              <p class="work-specialty">
+                Content manager, copywriter, editor, proofreader
+              </p>
+              <p class="work-period">May 2013 &mdash; Jun 2023</p>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul>
+            <li>
+              <p class="study-place">Belarusian State University</p>
+              <p class="study-specialty">Russian Language and Literature</p>
+              <p class="study-period">Sep 2006 &mdash; Jun 2011</p>
+            </li>
+            <li>
+              <p class="study-place">
+                High-Tech Park Educational Center (IT-Academy)
+              </p>
+              <p class="study-specialty">
+                Web Application Development with JavaScript
+              </p>
+              <p class="study-period">Nov 2018 &mdash; May 2019</p>
+            </li>
+            <li>
+              <p class="study-place">THE ROLLING SCOPES SCHOOL</p>
+              <p class="study-specialty">
+                JS/FE PRE-SCHOOL 2023Q2 (JAVASCRIPT)
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="language">
+          <h2 class="section-title">Language</h2>
+          <ul>
+            <li>
+              <p class="language-name">English</p>
+              <p class="language-level">Intermediate/Upper-intermediate</p>
+            </li>
+            <li>
+              <p class="language-name">Russian</p>
+              <p class="language-level">Native</p>
+            </li>
+            <li>
+              <p class="language-name">Belarusian</p>
+              <p class="language-level">Advanced</p>
+            </li>
+            <li>
+              <p class="language-name">Polish</p>
+              <p class="language-level">Beginner, Elementary</p>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code examples</h2>
+          <div class="codewars-block">
+            <div class="codewars-logo">
+              <img
+                src="assets/img/codewars-logo.gif"
+                alt="Codewars Logo"
+                class="codewars-icon"
+              />
+            </div>
+            <div class="codewars-item">
+              <a
+                href="https://www.codewars.com/users/MikalaiSerhiyenia"
+                class="link"
+                target="_blank"
+                >My Codewars Page</a
+              >
+            </div>
+          </div>
+          <details>
+            <summary class="code-link">Duplicate Encoder</summary>
+            <p>
+              The goal of this exercise is to convert a string to a new string
+              where each character in the new string is "(" if that character
+              appears only once in the original string, or ")" if that character
+              appears more than once in the original string. Ignore
+              capitalization when determining if a character is a duplicate.
+            </p>
+            <pre class="code-example">
+    function duplicateEncode(word){
+        return word.toLowerCase().split('').map((char, index, array) => {
+            const count = array.filter((c) => c === char).length;
+            return count === 1 ? "(" : ")";
+        }).join('');
+    }</pre
+            >
+          </details>
+          <details>
+            <summary class="code-link">Count characters in your string</summary>
+            <p>
+              The main idea is to count all the occurring characters in a
+              string. If you have a string like aba, then the result should be
+              {'a': 2, 'b': 1}. What if the string is empty? Then the result
+              should be empty object literal, {}.
+            </p>
+            <pre class="code-example">
+    function count(string) {
+        let charCount = {};
+        for (let char of string) {
+        charCount[char] ? charCount[char]++ : charCount[char]=1
+        }
+        return charCount;
+    }</pre
+            >
+          </details>
+          <details>
+            <summary class="code-link">The highest profit wins!</summary>
+            <p>
+              Write a function that returns both the minimum and maximum number
+              of the given list/array.
+            </p>
+            <pre class="code-example">
+    function minMax(arr){
+      return [Math.min(...arr), Math.max(...arr)];
+    }</pre
+            >
+          </details>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="contacts-list">
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/place-logo.png"
+                  alt="place-logo"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="contact-item">
+                <a
+                  href="https://goo.gl/maps/WydqLjpew2TuhRp56"
+                  class="link"
+                  target="_blank"
+                  >Warsaw, Poland</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/Gmail_Logo_512px.png"
+                  alt="gmail-logo"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="contact-item">
+                <a href="mailto:mikalai.serhiyenia@gmail.com" class="link"
+                  >mikalai.serhiyenia@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+                  alt="discord-logo"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="contact-item">
+                <a
+                  href="https://discordapp.com/users/mikalaiserhiyenia/"
+                  class="link"
+                  >mikalaiserhiyenia</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/Telegram_logo.svg.png"
+                  alt="telegram-logo"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="contact-item">
+                <a href="https://t.me/mikalaiserhiyenia" class="link"
+                  >@mikalaiserhiyenia</a
+                >
+              </div>
+            </li>
+            <li class="contact-block">
+              <div class="contact-img">
+                <img
+                  src="assets/img/smartphone-logo.png"
+                  alt="phone-logo"
+                  class="contact-icon"
+                />
+              </div>
+              <div class="contact-item">
+                <a href="tel:++48572119619" class="link">+48572119619</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-element">
+            <a href="https://github.com/MikalaiSerhiyenia" target="_blank">
+              <img
+                src="assets/img/git-hub-logo.png"
+                alt="GitHub Logo"
+                class="git-hub-logo"
+              />
+            </a>
+          </li>
+          <li class="footer-element">
+            <p>© 2023</p>
+          </li>
+          <li class="footer-element">
+            <a href="https://rs.school/js/" target="_blank">
+              <img
+                src="assets/img/rs-school-logo.png"
+                alt="RS School Logo"
+                class="rs-school-logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
