@@ -172,8 +172,8 @@
             </p>
             <pre class="code-example">
     function duplicateEncode(word){
-        return word.toLowerCase().split('').map((char, index, array) => {
-            const count = array.filter((c) => c === char).length;
+        return word.toLowerCase().split('').map(function(char, index, array){
+            const count = array.filter(function(c){c === char}).length;
             return count === 1 ? "(" : ")";
         }).join('');
     }</pre
