@@ -17,3 +17,14 @@ HTML
 CSS/SASS  
 JavaScript (Basic)  
 Git
+
+## Code Example
+
+```javascript
+function getAverage(arr) {
+  return (
+    Math.round((arr.reduce((acc, curr) => acc + curr, 0) / arr.length) * 100) /
+      100 || 0
+  );
+}
+```
