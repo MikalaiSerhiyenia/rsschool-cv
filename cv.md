@@ -37,3 +37,8 @@ Belarusian State University (Faculty of Philology)
 Courses:  
 IT-Academy  
 Rolling Scopes School (PreSchool and Stage 1)
+
+## Language
+
+English (B1-B2)  
+Russian (Native)
