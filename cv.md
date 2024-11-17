@@ -28,3 +28,12 @@ function getAverage(arr) {
   );
 }
 ```
+
+## Education
+
+University:  
+Belarusian State University (Faculty of Philology)
+
+Courses:  
+IT-Academy  
+Rolling Scopes School (PreSchool and Stage 1)
